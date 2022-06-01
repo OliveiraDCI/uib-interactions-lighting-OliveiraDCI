@@ -1,0 +1,76 @@
+:root {
+  --grey: #484848;
+  --yellow: #fff900;
+  --orange: #ff6c00;
+  --bg: #262626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg);
+  font: 400 8rem/1.5 "Lato", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.letter {
+  padding: 0.5rem;
+  color: var(--grey);
+  animation: light-me-up 4s ease-in-out infinite;
+}
+
+.letter-1 {
+  animation-delay: 0.2s;
+}
+.letter-2 {
+  animation-delay: 0.5s;
+}
+.letter-3 {
+  animation-delay: 0.7s;
+}
+.letter-4 {
+  animation-delay: 0.9s;
+}
+.letter-5 {
+  animation-delay: 1.1s;
+}
+.letter-6 {
+  animation-delay: 1.3s;
+}
+.letter-7 {
+  animation-delay: 1.6s;
+}
+.letter-8 {
+  animation-delay: 1.8s;
+}
+
+@keyframes light-me-up {
+  0% {
+    color: var(--grey);
+  }
+  25% {
+  }
+  50% {
+    color: var(--yellow);
+  }
+  75% {
+    color: var(--orange);
+  }
+  0% {
+    color: var(--grey);
+  }
+}
