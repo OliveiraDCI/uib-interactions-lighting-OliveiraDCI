@@ -18,9 +18,10 @@ html {
 body {
   height: 100vh;
   background-color: var(--bg);
-  font: 400 8rem/1.5 "Lato", sans-serif;
+  /* font: 400 8rem/1.5 "Lato", sans-serif; */
+  font: 200 5rem/1.5 "Source Code Pro", monospace;
   display: grid;
-  place-content: center;
+  place-items: center;
 }
 
 .container {
@@ -28,8 +29,8 @@ body {
 }
 
 .container span {
-  font-weight: 400;
-  letter-spacing: 20px;
+  font-weight: 200;
+  letter-spacing: 5px;
 }
 
 .letter {
@@ -37,7 +38,6 @@ body {
   color: var(--grey);
   animation: lightMeUp 1.4s linear infinite,
     letterWave 1s ease-in-out infinite alternate;
-  /* animation-delay: calc(var(--order) * 50ms);/ */
 }
 
 .letter-1 {
@@ -63,6 +63,9 @@ body {
 }
 .letter-8 {
   animation-delay: 0.8s;
+}
+.letter-9 {
+  animation-delay: 1s;
 }
 
 @keyframes lightMeUp {
